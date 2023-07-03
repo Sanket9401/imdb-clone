@@ -17,7 +17,7 @@ let listOfFavorites=[];
 
 //for fetching movies from api
 async function loadMovies(searchTerm){
-const URL = `http://www.omdbapi.com/?s=${searchTerm}&page=1&apikey=e9573d45`;
+const URL = `https://www.omdbapi.com/?s=${searchTerm}&page=1&apikey=e9573d45`;
 const res = await fetch(`${URL}`);
 const data = await res.json();
   if(data.Response==="True"){
@@ -69,7 +69,7 @@ function loadMovieDetails(){
 		 movie.addEventListener('click', async function(){
 		 		searchList.classList.add('hide-search-list');
 		 		searchBox.value="";
-		 		const result = await fetch(`http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=e9573d45`);
+		 		const result = await fetch(`https://www.omdbapi.com/?i=${movie.dataset.id}&apikey=e9573d45`);
 		 		const movieDetails = await result.json();
 		 	  displayMovieDetails(movieDetails);
 		 });
@@ -78,7 +78,7 @@ function loadMovieDetails(){
 
 //adding the liked movie to the favourite list
 async function addToFavourites(id){
-const result = await fetch(`http://www.omdbapi.com/?i=${id}&apikey=e9573d45`);
+const result = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=e9573d45`);
 const movie= await result.json();
 console.log(movie);
 	const favItem = document.createElement('div');
