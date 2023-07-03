@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://kit.fontawesome.com/410f926a6f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="wrapper">
+	<!-- logo -->
+	<div class="logo">
+		<div class="container">
+        <i class="fa-solid fa-film"></i>
+		<p>Movies<span>Mania</span></p></div><p class="fav">Favourites</p><p class="hide go-back">Go Back</p></div>
+	<!-- End of logo -->
+
+	<!-- search container -->
+	<div class="search-container">
+		<div class="search-element">
+			<h3>Search Movie here :</h3>
+			<input type ="text" placeholder="Which Movie you are looking for ..." class="search-input" id="searchBox" onkeyup="findMovies()" onclick="findMovies()">
+			<div class="search-list" id="search-list">
+				<!-- <div class="search-item" id="search-item">
+					<div class="search-item-thumbnail">
+					<img src="endgame.jpg"></div>
+					<div class="search-item-info">
+						<h3>Avengers</h3>
+						<p>2017</p>
+					</div> -->
+			</div>
+		</div>
+	</div>
+	<!-- end of search container	 -->
+
+	<!-- result container -->
+	<div class="container">
+		<div class="result-container">
+			<div class="result" id="result">
+				<!-- Movie Information  -->
+	<!-- 			  <div class="movie-poster">
+					<img src="" alt="movie-poster">
+				</div>
+				<div class="movie-info">
+					<h3 class="movie-title">Avengers</h3><i class="fa-sharp fa-regular fa-heart "></i>
+					<ul class="movie-details">
+						<li class="year">Year:2017</li>
+						<li class="rated">Ratings:PG-13</li>
+						<li class="released">Released: 25 May, 2017</li>
+					</ul>
+					<p class="genre"><b>Genre: </b>Action, Adventure</p>
+					<p class="actors">Chris Pratt</p>
+					<p class="plot"></p>
+					<p class="language"></p>
+					<p class="awards"><b><i class="fa-solid fa-award"></i></b>Nominated for 1 oscar</p>
+
+				</div> -->
+				
+			</div>
+		</div>
+		<div class="favourites hide"><h2 style="margin-top: 10px;">Favourites</h2>
+             
+
+			<div class="fav-list">		
+			<!-- <div class="fav-item" id="fav-item">
+					<div class="fav-item-thumbnail">
+					<img src="endgame.jpg"></div>
+					<div class="fav-item-info">
+						<h3>Avengers</h3>
+						<p>2017</p>
+					</div><i class="fa-solid fa-trash delete" ></i></div>
+
+				
+				<div class="fav-item" id="fav-item">
+					<div class="fav-item-thumbnail">
+					<img src="endgame.jpg"></div>
+					<div class="fav-item-info">
+						<h3>Avengers</h3>
+						<p>2017</p>
+					</div><i class="fa-solid fa-trash delete"></i></div> -->		
+
+            </div>
+
+		</div>
+	</div>
+
+	<!-- end of result container -->
+
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
