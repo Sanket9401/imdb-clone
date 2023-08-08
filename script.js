@@ -1,6 +1,3 @@
-// Title : http://www.omdbapi.com/?s=avengers&apikey=e9573d45;
-// Details : http://www.omdbapi.com/?i=tt3896198&apikey=e9573d45
-
 const searchBox = document.getElementById('searchBox');
 const searchList= document.getElementById('search-list');
 const result = document.getElementById('result');
